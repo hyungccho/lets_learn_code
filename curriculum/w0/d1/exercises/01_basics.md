@@ -1,4 +1,4 @@
-# Codeacademy (3.25 hrs)
+# Codeacademy
 
 [Codeacademy](https://www.codecademy.com/learn/ruby) is a great resource to jump into the practice of code, and interactively
 learn the basics of Ruby.
