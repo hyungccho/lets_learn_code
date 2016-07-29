@@ -5,18 +5,15 @@ ourselves to see the extent of code.
 
 # Ruby In The Terminal
 
-We'll start by creating a `00_hello_world.rb` file in a `exercises` folder that we
-will create through the terminal.
-
 First, open up the terminal and navigate to the `Desktop`.
 
-Next, create a folder named `exercises`, navigate to this folder, and create a file
-called `00_hello_world.rb`. This is our working directory, so we want to open up our
-trusty text editor, atom. **NOTE**: Every single action must be done through
-the terminal!
+Next, create a folder named `exercises`, navigate to this folder, and create another folder
+called `d3`. In this folder, create a file named `00_hello_world.rb`.This is our
+working directory, so we want to open up our trusty text editor, atom.
+**NOTE**: Every single action must be done through the terminal!
 
 Once we've opened up atom in our directory, we should see our tree of directories
-and files that only consists of `exercises` and `00_hello_world.rb`.
+and files that only consists of `exercises`, `d3`, and `00_hello_world.rb`.
 
 Let's open up `00_hello_world.rb`, and put in a simple command:
 
@@ -43,10 +40,12 @@ decide to call a method on an object that doesn't carry that method it will thro
 an error and exit your code. Let's see what we mean by that.
 
 Go to your terminal and create a new file called `01_throw_error.rb`. Open this file
-through Atom and this time we'll type in something like `"Hello, world".what_is_your_name`.
+through Atom and this time we'll type in something like `"Hello, world".my_cool_method`.
 Run it in your terminal and see what it says. You should have gotten this:
 
-`throw_error.rb:1:in `<main>': undefined method `what_is_your_name' for "Hello, world":String (NoMethodError)`
+```
+throw_error.rb:1:in <main>': undefined method `my_cool_method' for "Hello, world":String (NoMethodError)
+```
 
 Let's analyze this error a little bit. Ruby in itself is robust in showing you exactly
 what went wrong with the code - even giving you information on where it traveled to hit the
@@ -58,12 +57,33 @@ need to change it. And that's why Ruby is one of the easiest languages to pick u
 
 # Exercises
 
-With the pattern we've been following: creating a file with `.rb` extension =>
-writing Ruby code => executing it in the terminal, complete the following exercises.
-Try your best to think your way through these exercises rather than looking at the solutions.
+With the pattern we've been following: (do this all in the `d3` folder) creating
+a file with `.rb` extension => writing Ruby code => executing it in the terminal, complete the following exercises. Try your best to think your way through these exercises rather than
+looking at the solutions.
 
-First, create a file named `02_operations_exercises.rb` in the following file.
+### Even Or Odd
 
-1. Write a method `odd_or_even` that takes in a single integer argument (You may assume
-that the argument provided will be an integer). If the argument is an even number,
-`puts` `Even!`, if it's an odd number, `puts` `Odd!`.
+1. Create a file called `02_even_or_odd.rb`.
+
+2. Write a script that prompts the user for a number. If the number they provide
+is an even number, `puts` `Even!`, if it's an odd number, `puts` `Odd!`.
+
+### Fizz Buzz
+
+1. Create a file called `03_fizz_buzz.rb`.
+
+2. Write a script that loops through the numbers between 1 and 100 inclusive. If
+the number is evenly divisible by `3`, `puts "Fizz"`. If the number is evenly divisible
+by `5`, `puts "Buzz"`. If the number is evenly divisible by both `3` and `5`, `puts "FizzBuzz!"`
+Lastly, if the number is not divisible by `3` or `5`, then `puts` the number.
+
+### My Weird Dictionary
+
+1. Create a file called `04_my_weird_dictionary.rb`.
+
+2. Write a script that **continuously** prompts the user for words until the input is
+`exit` (case insensitive). Once the user types in `exit`, sort the words they input
+in reverse alphabetical order (`z` first, `a` last) and `puts` each word.
+
+# Blog
+- [ ] Day 3 Blog Post
